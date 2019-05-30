@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const monk = require('monk')
 const app = express()
+const url = ''
 const db = monk(url)
 const port = 5000
 const user = db.get('user')
